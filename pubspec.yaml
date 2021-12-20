@@ -1,11 +1,11 @@
 name: zz_animate_pkg
 description: A new Flutter package project.
 version: 0.0.1
-homepage:
+homepage: https://github.com/Gagan5278
 
 environment:
-  sdk: ">=2.15.0 <3.0.0"
-  flutter: ">=1.17.0"
+  sdk: '>=2.15.0 <3.0.0'
+  flutter: '>=1.17.0'
 
 dependencies:
   flutter:
