@@ -11,7 +11,7 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-An example of PageView with page index animation in Flutter. There is way to add images from assets and short description as well. Support for carausal animation.
+An example of PageView with page index animation in Flutter. There is way to add images from assets and short description as well. Support for carousel animation.
 Package support for local and network image both.
 
 ## Features
@@ -23,7 +23,7 @@ Ability to modify page index color, font, style etc.
 
 ## Getting started
 
-Create a flutter project and in your pubsec.yaml add below dependency
+Create a flutter project and in your pubspec.yaml add below dependency
 
 ```dependencies:
  zz_animate_pkg: ^0.0.1
