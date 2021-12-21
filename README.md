@@ -11,26 +11,65 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+ An example of PageView with page index animation in Flutter. There is way to add images from assets and short description as well. Support for carausal animation.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+ Support local images added in assets. 
+ Loading progress anination for high resolution images. 
+ Ability to modify page index color, font, style etc.
+ 
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Create a flutter project and in your pubsec.yaml add below dependency 
+
+ ```dependencies:
+  zz_animate_pkg: ^0.0.1```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+first create a List of map (image description and image name in assets folder)as below 
+ List<Map<String, String>> imagesModel = [{
+    'message': 'Ipsum is simply dummy text',
+    'image': '1.jpg',
+  },
+  {
+    'message':
+        'There are many variations of passages of Lorem Ipsum.',
+    'image': '2.jpg',
+  },
+  {
+    'message':
+        'It is a long established fact that a reader will be distracted.',
+    'image': '3.jpg',
+  },........]
+  
+  Inside you class, add below code 
+  
+  
+void main() {
+  runApp(const MyApp());
+}
 
-```dart
-const like = 'sample';
-```
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: HomeScreen(
+        imagesArray: imagesModel,
+      ),
+    );
+  }
+}
+
 
 ## Additional information
 
