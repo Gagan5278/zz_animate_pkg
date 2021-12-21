@@ -31,7 +31,7 @@ Create a flutter project and in your pubsec.yaml add below dependency
 
 ## Usage
 
-first create a List of map (image description and image name in assets/images/ folder)as below
+first create a List of map (images are added in assets/images/ folder. Don't forget to add in assets of your pubspec.yaml file)as below
 
 ```
  List<Map<String, String>> imagesModel = [{
@@ -84,14 +84,16 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
          primarySwatch: Colors.blue,
      ),
-     home: HomeScreen(
+     home: PageViewScreen(
         imagesArray: imagesModel,
       ),
     );
   }
 }
 ```
-## Screenshot 
+
+## Screenshot
+
 <img width="424" alt="Screenshot 2021-12-21 at 11 46 01" src="https://user-images.githubusercontent.com/2304583/146917392-60b70966-8d6b-4246-a7e4-79f95ea05592.png">
 
 For adding viewPort support
@@ -112,7 +114,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
          primarySwatch: Colors.blue,
      ),
-     home: HomeScreen(
+     home: PageViewScreen(
         imagesArray: imagesModel,
         isViewFraction: true,
       ),
@@ -120,7 +122,8 @@ class MyApp extends StatelessWidget {
   }
 }
 ```
-## Screenshot 
+
+## Screenshot
 
 <img width="428" alt="Screenshot 2021-12-21 at 11 43 46" src="https://user-images.githubusercontent.com/2304583/146916991-8bf747cd-a4de-4f14-86fa-07704f25eb75.png">
 
@@ -142,7 +145,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
          primarySwatch: Colors.blue,
      ),
-     home: HomeScreen(
+     home: PageViewScreen(
         imagesArray: networkImagesModel,
       ),
     );

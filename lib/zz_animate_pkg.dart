@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:zz_animate_pkg/widget/footer_container.dart';
 import 'package:zz_animate_pkg/widget/page_widget.dart';
 
-class HomeScreen extends StatefulWidget {
+class PageViewScreen extends StatefulWidget {
   final List<Map<String, String>> imagesArray;
   final pageController = PageController();
   final bool isViewFraction;
@@ -14,7 +14,7 @@ class HomeScreen extends StatefulWidget {
   final bool isNetowrkImage;
   final Color progressColor;
 
-  HomeScreen({
+  PageViewScreen({
     Key? key,
     required this.imagesArray,
     this.isViewFraction = false,
@@ -28,10 +28,10 @@ class HomeScreen extends StatefulWidget {
     this.progressColor = Colors.red,
   }) : super(key: key);
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  _PageViewScreenState createState() => _PageViewScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _PageViewScreenState extends State<PageViewScreen> {
   late PageController pageController;
   int selectedIndex = 0;
 
