@@ -6,7 +6,7 @@ class FooterContainer extends StatelessWidget {
     required this.totalItems,
     required this.selectedIndex,
     this.defaultColor = Colors.grey,
-    this.selectedColor = Colors.redAccent,
+    this.selectedColor = Colors.red,
   }) : super(key: key);
 
   final int totalItems;
@@ -17,10 +17,12 @@ class FooterContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     // ignore: dead_code
     return Container(
+      alignment: Alignment.center,
       margin: const EdgeInsets.symmetric(horizontal: 20),
       width: double.infinity,
       height: 50,
       child: ListView.builder(
+        shrinkWrap: true,
         scrollDirection: Axis.horizontal,
         itemBuilder: (cntx, index) {
           return Row(

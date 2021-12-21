@@ -7,10 +7,13 @@ import 'package:zz_animate_pkg/widget/page_widget.dart';
 class HomeScreen extends StatefulWidget {
   final List<Map<String, String>> imagesArray;
   final pageController = PageController();
-  bool isViewFraction;
-  double cardCornerRadius;
-  double viewportFraction;
-  TextStyle textStyle;
+  final bool isViewFraction;
+  final double cardCornerRadius;
+  final double viewportFraction;
+  final TextStyle textStyle;
+  final bool isNetowrkImage;
+  final Color progressColor;
+
   HomeScreen({
     Key? key,
     required this.imagesArray,
@@ -21,6 +24,8 @@ class HomeScreen extends StatefulWidget {
       color: Colors.white,
       fontSize: 14,
     ),
+    this.isNetowrkImage = false,
+    this.progressColor = Colors.red,
   }) : super(key: key);
   @override
   _HomeScreenState createState() => _HomeScreenState();
@@ -68,6 +73,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 borderWidth: 1.0,
                 isViewPortVisible: widget.isViewFraction,
                 textStyle: widget.textStyle,
+                isNetworkImage: widget.isNetowrkImage,
+                progressColor: widget.progressColor,
               ),
             ),
             FooterContainer(

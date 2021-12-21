@@ -14,6 +14,8 @@ class PageViewWidget extends StatelessWidget {
     required this.borderColor,
     required this.isViewPortVisible,
     required this.textStyle,
+    required this.isNetworkImage,
+    required this.progressColor,
   }) : super(key: key);
 
   final List<Map<String, String>> imageArray;
@@ -26,6 +28,9 @@ class PageViewWidget extends StatelessWidget {
   final Color borderColor;
   final bool isViewPortVisible;
   final TextStyle textStyle;
+  final bool isNetworkImage;
+  final Color progressColor;
+
   @override
   Widget build(BuildContext context) {
     return PageView.builder(
@@ -47,16 +52,21 @@ class PageViewWidget extends StatelessWidget {
             child: Stack(
               fit: StackFit.expand,
               children: [
-                const Center(
+                Center(
                   child: CircularProgressIndicator(
-                    color: Colors.green,
+                    color: progressColor,
                     strokeWidth: 2.0,
                   ),
                 ),
-                Image.asset(
-                  'assets/images/${(imageArray.map((e) => e['image']!)).toList()[isViewPortVisible ? index : (index + 1)]}',
-                  fit: BoxFit.fill,
-                ),
+                isNetworkImage
+                    ? Image.network(
+                        (imageArray.map((e) => e['image']!)).toList()[index],
+                        fit: BoxFit.fill,
+                      )
+                    : Image.asset(
+                        'assets/images/${(imageArray.map((e) => e['image']!)).toList()[index]}',
+                        fit: BoxFit.fill,
+                      ),
                 ImageInfoWidget(
                   message:
                       (imageArray.map((e) => e['message']!)).toList()[index],

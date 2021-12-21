@@ -1,3 +1,57 @@
+const List<Map<String, String>> networkImagesModel = [
+  {
+    'message': 'Ipsum is simply dummy text of the printing',
+    'image': 'https://images.pexels.com/photos/624015/pexels-photo-624015.jpeg',
+  },
+  {
+    'message':
+        'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form',
+    'image':
+        'https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg',
+  },
+  {
+    'message':
+        'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
+    'image':
+        'https://images.pexels.com/photos/1509582/pexels-photo-1509582.jpeg',
+  },
+  {
+    'message':
+        'Translations: Can you help translate this site into a foreign language ? Please email us with details if you can help.',
+    'image':
+        'https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg',
+  },
+  {
+    'message':
+        'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.',
+    'image': 'https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg',
+  },
+  {
+    'message':
+        'A dictionary of over 100  words, combined with a handful of model  structures',
+    'image':
+        'https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg',
+  },
+  {
+    'message': 'Ipsum is simply dummy text of the printing',
+    'image':
+        'https://images.pexels.com/photos/3900437/pexels-photo-3900437.jpeg',
+  },
+  {
+    'message': 'Ipsum is simply dummy text of the printing',
+    'image':
+        'https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg',
+  },
+  {
+    'message':
+        'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.',
+    'image':
+        'https://images.pexels.com/photos/3876407/pexels-photo-3876407.jpeg',
+  },
+];
+
+// Network image model
+
 const List<Map<String, String>> imagesModel = [
   {
     'message': 'Ipsum is simply dummy text of the printing',

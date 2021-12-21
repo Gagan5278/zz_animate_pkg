@@ -18,7 +18,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: HomeScreen(
-        imagesArray: imagesModel,
+        imagesArray: networkImagesModel,
+        isNetowrkImage: true,
+        isViewFraction: true,
       ),
     );
   }
