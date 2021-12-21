@@ -1,3 +1,3 @@
 ## 0.0.4
 
-Added screenshots. Minor fixes.
+ Minor update and fixes.
