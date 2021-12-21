@@ -150,7 +150,11 @@ class MyApp extends StatelessWidget {
 HomeScreen parameters
 
 ```
-isNetowrkImage: By deafult 'false'. pass as 'true' value if network image support requires.
-isViewFraction: By deafult 'false'. Make 'true' if carusal view support requires.
+isNetowrkImage: Bool Type: - By deafult 'false'. pass as 'true' value if network image support requires.
+isViewFraction: Bool Type: - By deafult 'false'. Make 'true' if carusal view support requires.
+cardCornerRadius: Double Type: - Default value is 8.0.
+progressColor: Color Type: - Default value is 'red'. used as progress/animation color.
+textStyle: TextStyle Type: - Text style of image's message.
+viewportFraction: Double Type: - viewportFraction value of PageController. Default value is 0.8
 
 ```
