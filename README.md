@@ -25,11 +25,12 @@ and the Flutter guide for
 Create a flutter project and in your pubsec.yaml add below dependency 
 
  ```dependencies:
-  zz_animate_pkg: ^0.0.1```
-
+  zz_animate_pkg: ^0.0.1
+```
 ## Usage
 
 first create a List of map (image description and image name in assets folder)as below 
+```
  List<Map<String, String>> imagesModel = [{
     'message': 'Ipsum is simply dummy text',
     'image': '1.jpg',
@@ -44,31 +45,32 @@ first create a List of map (image description and image name in assets folder)as
         'It is a long established fact that a reader will be distracted.',
     'image': '3.jpg',
   },........]
+  ```
   
   Inside you class, add below code 
   
-  
-void main() {
-  runApp(const MyApp());
-}
+  ```
+    void main() {
+     runApp(const MyApp());
+   }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  class MyApp extends StatelessWidget {
+     const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: HomeScreen(
-        imagesArray: imagesModel,
-      ),
-    );
+    // This widget is the root of your application.
+     @override
+     Widget build(BuildContext context) {
+     return MaterialApp(
+       title: 'Pageview Demo',
+        theme: ThemeData(
+           primarySwatch: Colors.blue,
+       ),
+       home: HomeScreen(
+          imagesArray: imagesModel,
+        ),
+      );
+    }
   }
-}
 
 
 ## Additional information
